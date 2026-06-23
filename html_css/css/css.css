@@ -18,12 +18,79 @@ body {
     padding: 40px 0;
 }
 /* 반응형 */
+@keyframes navHintMove {
+    0% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(8px);
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
 @media (max-width: 1000px) {
     .nav {
         gap: 10px;
     }
     .nav a {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav_wrapper {
+        overflow: hidden;
+    }
+    .nav_wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 100%;
+        background: linear-gradient(
+            to right,
+            rgba(249,249,249,0),
+            rgba(249,249,249,1)
+        );
+        pointer-events: none;
+        z-index: 5;
+    }
+    .nav_hint {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        font-weight: 700;
+        color: #001C3D;
+        pointer-events: none;
+        z-index: 10;
+        animation: navHintmove 1.5s infinite;
+    }
+    .nav {
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;
+        padding-right: 80px;
+        scrollbar-width: none;
+        white-space: nowrap;
+    }
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+    .nav a {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+    .nav_item {
+        flex-shrink: 0;
     }
 }
 /* 네비게이션바 */
@@ -107,6 +174,15 @@ body {
 .nav_right {
     margin-left: auto;
     flex-shrink: 0;
+}
+
+.nav_wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.nav_hint {
+    display: none;
 }
 
 .dropdown {
