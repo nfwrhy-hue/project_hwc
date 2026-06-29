@@ -1,0 +1,23 @@
+@import url(./reset.css);
+@import url(./modules/layout.css);
+@import url(./modules/nav_bar.css);
+@import url(./modules/main_cards.css);
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+}

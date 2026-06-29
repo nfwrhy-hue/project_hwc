@@ -1,0 +1,243 @@
+.hwc-header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 72px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a1a1a;
+    width: 55%;
+}
+
+.logo .highlight {
+    color: #001c3d;
+}
+/* pc */
+.mobile-sidebar {
+    display: none;
+}
+
+.mobile-overlay {
+    display: none;
+}
+
+.gnb-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.gnb-item {
+    position: relative;
+    padding: 0 15px;
+}
+
+.gnb-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 72px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+    transition: color 0.2s ease;
+}
+
+.gnb-link i {
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.gnb-item:hover .gnb-link {
+    color: #001c3d;
+}
+
+.gnb-item:hover .gnb-link i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: #ffffff;
+    min-width: 180px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.gnb-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #4a5568;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8fafc;
+    color: #001c3d;
+}
+
+.header-util {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333333;
+}
+/* 모바일 (반응형 1024) */
+@media (max-width: 1024px) {
+    .gnb-nav, .login-btn {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 1002;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+        transition: right 0.3s ease-in-out;
+        padding: 20px;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .mobile-sidebar.active {
+        right: 0;
+    }
+
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        display: none;
+    }
+
+    .mobile-overlay.active {
+        display: block;
+    }
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .sidebar-close-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .sidebar-user {
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .m-login-btn {
+        text-decoration: none;
+        color: #001c3d;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .m-gnb-item {
+        margin-bottom: 15px;
+    }
+
+    .m-gnb-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: #333333;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .m-dropdown {
+        display: none;
+        list-style: none;
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+
+    .m-dropdown li a {
+        display: block;
+        padding: 8px 0;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .m-gnb-link.active i {
+        transform: rotate(180deg);
+    }
+}
