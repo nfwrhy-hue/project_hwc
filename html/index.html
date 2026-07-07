@@ -3,246 +3,310 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="자동차 구매부터 렌트, 리스, 투어, 보험 판매까지 원스톱으로 도와드립니다!">
-        <meta property="og:title" content="하이원카 No.1 자동차의 모든 것!">
-        <meta property="og:description" content="자동차 구매부터 렌트, 리스, 투어, 보험 판매까지 원스톱으로 도와드립니다!">
-        <title>하이원카 No.1 자동차의 모든 것!</title>
+        <meta name="description" content="">
+        <meta property="og:title" content="화성렌트카 여주영업소">
+        <meta property="og:description" content="">
+        <title>화성렌트카 여주영업소</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="../css/hwc.css">
-        <link rel="icon" href="../favicon/HWC_favicon.ico">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="icon" href="../favicon/favicon.ico">
     </head>
     <body>
-        <header class="hwc-header">
-            <div class="header-container">
-                <a href="../html/index.html"><img src="../favicon/favicon.ico" class="logo"></a>
-                <nav class="gnb-nav">
-                    <ul class="gnb-list">
-                        <li class="gnb-item">
-                            <a href="./rent.html" class="gnb-link">렌트<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./rent.html">일반 대여</a></li>
-                                <li><a href="#">월간 대여</a></li>
-                                <li><a href="#">보험 대차</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb-item">
-                            <a href="#" class="gnb-link">장기렌트 · 리스<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">전금융사 비교 견적</a></li>
-                                <li><a href="#">무심사 렌트 · 리스</a></li>
-                                <li><a href="#">중고차 장기 렌트</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb-item">
-                            <a href="#" class="gnb-link">승합차 대여 · 투어<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">9~15인승 대여</a></li>
-                                <li><a href="#">9~15인승 투어</a></li>
-                                <li><a href="#">의전 차량 대여</a></li>
-                                <li><a href="#">의전 차량 투어</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb-item">
-                            <a href="#" class="gnb-link">버스 투어<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">25인승 투어</a></li>
-                                <li><a href="#">28인승 리무진 투어</a></li>
-                                <li><a href="#">45인승 투어</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb-item">
-                            <a href="#" class="gnb-link">중고차</a>
-                        </li>
-                        <li class="gnb-item">
-                            <a href="#" class="gnb-link">자동차 보험<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">다이렉트 비교견적</a></li>
-                            </ul>
-                        </li>                  
-                    </ul>
+        <!-- 네비게이션 바 -->
+        <header class="gnb">
+            <div class="gnb_inner">
+                <a href="./index.html" class="logo"><img src="../img/logo.png"></a>
+                <nav class="gnb_menu">
+                    <a href="#">단기렌트</a>
+                    <a href="#">장기렌트</a>
+                    <a href="#">무심사 렌트 · 리스</a>
                 </nav>
-                <div class="header-util">
-                    <a href="#" class="login-btn">
-                        <i class="fa-regular fa-user"></i>
+                <div class="login_box">
+                    <button class="login_btn">
+                        <i class="fa-solid fa-user"></i>
                         <span>로그인</span>
-                    </a>
-                    <button class="hamburger-btn" aria-label="메뉴 열기">
-                        <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
         </header>
-        <div class="mobile-overlay"></div>
-        <aside class="mobile-sidebar">
-            <div class="sidebar-header">
-                <span class="logo-text">하이원<span class="highlight">카</span></span>
-                <button class="sidebar-close-btn"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="sidebar-user">
-                <a href="#" class="m-login-btn"><i class="fa-regular fa-user"></i>&ensp;로그인해 주세요</a>
-            </div>
-            <nav class="mobile-nav"></nav>
-        </aside>
-    <main>  
-        <section class="content_section">
-            <div class="section_header">
-                <h1>월간 베스트 렌트카 · 투어</h1>
-                <a href="#" class="all_btn">전체보기</a>
-            </div>
-            <!-- 테스트 리소스는 헤이딜러 -->
-            <div class="vehicle_grid">
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용1</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
+        <main>
+            <section class="hero_section">
+                <div class="hero_inner">
+                    <!-- 메인 슬로건 -->
+                    <div class="hero_slogan">
+                        <h2>화성렌트카 여주영업소</h2>
+                        <p>여주에서 가장 스마트하고 신속한 대차 · 렌트 서비스</p>
+                    </div>
+                    <!-- 예약/검색 폼 -->
+                    <div class="search_box">
+                        <h3 class="search_title">실시간 빠른 검색</h3>
+                        <form class="search_form" onsubmit="return false;">
+                            <!-- 대여/반납 장소 선택 폼 -->
+                            <div class="form_group">
+                                <label><i class="fa-solid fa-location-dot"></i>대여/반납 장소</label>
+                                <select name="location" class="form_control">
+                                    <option value="yeoju_station">여주역 (경강선)</option>
+                                    <option value="yeoju_terminal">여주종합터미널</option>
+                                    <option value="yeoju_office">본점 방문 (여주영업소)</option>
+                                    <option value="yeoju_delivery">여주 전지역 배송 요청</option>
+                                </select>
+                            </div>
+                            <!-- 대여 일시 선택 폼 -->
+                            <div class="form_group">
+                                <label><i class="fa-solid fa-calendar-days"></i>대여 일시</label>
+                                <input type="datetime-local" class="form_control" name="start_date">
+                            </div>
+                            <!-- 반납 일시 선택 폼-->
+                             <div class="form_group">
+                                <label><i class="fa-solid fa-calendar-days"></i>반납 일시</label>
+                                <input type="datetime-local" class="form_control" name="end_date">
+                             </div>
+                             <!-- 차종 선택 폼 -->
+                             <div class="form_group">
+                                <label><i class="fa-solid fa-car"></i>차종 구분</label>
+                                <select name="car_type" class="form_control">
+                                    <option value="all">전체 차종</option>
+                                    <option value="compact">경형/소형</option>
+                                    <option value="sedan">중형/대형 세단</option>
+                                    <option value="suv">SUV/RV</option>
+                                    <option value="electric">전기차</option>
+                                </select>
+                             </div>
+                             <!-- 검색 제출 버튼 -->
+                              <button type="submit" class="search_submit_btn">
+                                <span>차량 검색하기</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                              </button>
+                        </form>
                     </div>
                 </div>
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용2</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>                        
+            </section>
+            <!-- 인기 차량 섹션 -->
+             <section class="recommend_section">
+                <div class="recommend_inner">
+                    <div class="section_header">
+                        <div class="title_area">
+                            <span class="sub_title">월간 인기 렌트카</span>
+                            <h3 class="main_title">화성렌트카 여주영업소&nbsp;<span>인기 차량 라인업</span></h3>
+                        </div>
+                        <p class="section_desc">고객님들이 선호하는 월간 인기 차량을 만나보세요.</p>
+                    </div>
+                    <!-- 차량 카드 리스트 -->
+                     <div class="car_grid">
+                        <!-- 카드 1 -->
+                         <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_best">인기</span>
+                                <span class="badge_fuel_gasoline">가솔린</span>
+                            </div>
+                            <div class="car_img_box">
+                                <!-- 테스트용 이미지 리소스: 헤이딜러 -->
+                                 <img src="../test_img/test_1.jpg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">준중형 세단</span>
+                                <h4 class="car_name">더 뉴 아반떼 (CN7)</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>5인승</li>
+                                    <li><i class="fa-solid fa-suitcase"></i>중형 2개</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">55,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                         </div>
+                         <!-- 카드 2 -->
+                         <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_recommend">추천</span>
+                                <span class="badge_fuel_hybrid">하이브리드</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_2.jpg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">중형 SUV</span>
+                                <h4 class="car_name">쏘렌토 하이브리드 (MQ4)</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>5/7인승</li>
+                                    <li><i class="fa-solid fa-suitcase"></i>대형 3개</li>
+                                    <li><i class="fa-solid fa-gears">오토</i></li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">85,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                         </div>
+                         <!-- 카드 3 -->
+                         <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_luxury">고급</span>
+                                <span class="badge_fuel_lpg">LPG</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_3.jpg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">대형 세단</span>
+                                <h4 class="car_name">디 올 뉴 그랜저 (GN7)</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>5인승</li>
+                                    <li><i class="fa-solid fa-suitcase"></i>대형 2개</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">110,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                          </div>
+                          <!-- 카드 4 -->
+                          <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_best">인기</span>
+                                <span class="badge_fuel_gasoline">디젤/가솔린</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_4.jpg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">대형 RV</span>
+                                <h4 class="car_name">더 뉴 카니발 (9인승)</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>9인승</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">95,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                          </div>
+                          <!-- 카드 5 -->
+                          <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_recommend">추천</span>
+                                <span class="badge_fuel_gasoline">가솔린</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_5.jpg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">준중형 SUV</span>
+                                <h4 class="car_name">더 뉴 스포티지</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>5인승</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">70,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                          </div>
+                          <!-- 카드 6 -->
+                          <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_best">인기</span>
+                                <span class="badge_fuel_gasoline">가솔린</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_6.jpg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">경형 SUV</span>
+                                <h4 class="car_name">캐스퍼 일렉트릭/가솔린</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>4인승</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">40,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                          </div> 
+                          <!-- 카드 7 -->
+                          <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_luxury">고급</span>
+                                <span class="badge_fuel_gasoline">하이브리드</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_7.jpeg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">준대형 세단</span>
+                                <h4 class="car_name">K8 하이브리드</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>5인승</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">95,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                          </div>
+                          <!-- 카드 8 -->
+                          <div class="car_card">
+                            <div class="badge_box">
+                                <span class="badge_status_recommend">추천</span>
+                                <span class="badge_fuel_gasoline">전기차</span>
+                            </div>
+                            <div class="car_img_box">
+                                <img src="../test_img/test_8.jpeg" onerror="this.src='#'">
+                            </div>
+                            <div class="car_info">
+                                <span class="car_segment">중형 세단</span>
+                                <h4 class="car_name">아이오닉 6 (EV)</h4>
+                                <ul class="car_specs">
+                                    <li><i class="fa-solid fa-user-group"></i>5인승</li>
+                                    <li><i class="fa-solid fa-gears"></i>오토</li>
+                                </ul>
+                                <div class="price_box">
+                                    <span class="price_label">24시간 기준</span>
+                                    <strong class="price_value">80,000<span>원 ~</span></strong>
+                                </div>
+                                <a href="#" class="reserve_btn">예약하기<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                          </div>                                     
+                     </div>
                 </div>
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용3</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>                        
-                </div>
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용4</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>                        
-                </div>
-            </div>                                
-        </section>
-        <section class="content_section">
-            <div class="section_header">
-                <h1>장기렌트 · 리스 인기 차종</h1>
-                <a href="#" class="all_btn">전체보기</a>
-            </div>
-            <div class="vehicle_grid">
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용1</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>
-               </div>   
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용2</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>
-               </div>   
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용3</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>
-                </div>    
-                <div class="vehicle_card">
-                    <img src="../test_img/test_5.jpeg">
-                    <div class="vehicle_info">
-                        <h3>테스트용4</h3>
-                        <p>1996 · 가솔린 · 12,000km</p>
-                        <strong>9,999만원</strong>
-                    </div>
-                </div>
-            </div>
-        </section> 
-        <section class="content_section">
-            <div class="section_header">
-                <h1>최근 등록된 중고차</h1>
-                <a href="#" class="all_btn">전체보기</a>
-            </div>            
-            <div class="vehicle_grid">
-                <div class="vehicle_card">
-                    <img src="../test_img/test1.jpeg">
-                    <div class="vehicle_info">
-                        <h3>현대 아반떼 CN7</h3>
-                        <p>2023 · 가솔린 · 12,000km</p>
-                        <strong>1,980만원</strong>
-                    </div>
-               </div>   
-                <div class="vehicle_card">
-                    <img src="../test_img/test2.jpeg">
-                    <div class="vehicle_info">
-                        <h3>기아 K5</h3>
-                        <p>2022 · 가솔린 · 25,000km</p>
-                        <strong>2,250만원</strong>
-                    </div>
-               </div>   
-                <div class="vehicle_card">
-                    <img src="../test_img/test3.jpeg">
-                    <div class="vehicle_info">
-                        <h3>제네시스 G80</h3>
-                        <p>2021 · 디젤 · 35,000km</p>
-                        <strong>4,650만원</strong>
-                    </div>
-                </div>    
-                <div class="vehicle_card">
-                    <img src="../test_img/test4.jpeg">
-                    <div class="vehicle_info">
-                        <h3>BMW 520i</h3>
-                        <p>2022 · 가솔린 · 18,000km</p>
-                        <strong>5,200만원</strong>
-                    </div>
-                </div>
-            </div>                                                                                                
-        </section>
-    </main>
-    <footer class="hwc-footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <a href="#" class="footer-logo">
-                    <span class="logo-text">하이원<span class="highlight">카</span></span>
-                </a>
-                <ul class="footer-links">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#" class="privacy">개인정보처리방침</a></li>
-                    <li><a href="#">고객센터</a></li>
+             </section>
+        </main>
+        <script type="module" src="../js/index.js"></script>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_company">(주) 화성렌트카 여주영업소</div>
+                <ul class="footer_info">
+                    <li><a href="#" class="privacy_policy">개인정보 처리방침</a></li>
+                    <li>사업자 등록번호 : ###-##-#####</li>
+                    <li>고객센터 : ###-####-####</li>
+                    <li>대표자 : ###</li>
+                    <li>찾아오시는 길 : 경기도 여주시 주내로 65 1층</li>
+                    <li><a href="mailto:nfwrhy@gmail.com"></a>nfwrhy@gmail.com</li>
+                    <li>통신판매업신고번호 : 제####-####-####호</li>
+                    <li><a href="#">사업자정보확인</a></li>
                 </ul>
-            </div>
-            <div class="footer-info">
-                <p>
-                    <span>하이원카네트웍스</span>
-                    <span>대표이사 : 이경민</span>
-                    <span>사업자등록번호 : ###-##-#####</span>
+                <p class="footer_notice">
+                    화성렌트카 여주영업소는 전 차량 종합보험 가입 및 정기 점검을 준수합니다. 본 사이트의 상품 및 대차 서비스 정보, 거래에 대한 책임은 관계 법령 및 이용약관에 따릅니다.
                 </p>
-                <p>
-                    <span>주소: 경기도 여주시 주내로 65 1층</span>
-                    <span>통신판매업신고 : 제 ####-####-####호</span>
-                </p>
-                <p><span>고객센터 : 010 - 7577 - 7520</span></p>
+                <div class="footer_copyright">2026 &copy; all rights reserved.</div>
             </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 HiwonCar Networks Co., Ltd. All Rights Reserved.</p>
-                <div class="footer-sns">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-blogger"></i></a>
-                </div>
-        </div>
-    </footer>    
-    <script type="module" src="../js/hwc.js"></script>       
+        </footer>
     </body>
 </html>
