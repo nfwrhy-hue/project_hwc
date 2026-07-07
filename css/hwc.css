@@ -2,6 +2,7 @@
 @import url(./modules/layout.css);
 @import url(./modules/nav_bar.css);
 @import url(./modules/main_cards.css);
+@import url(./modules/rent.css);
 
 html, body {
     width: 100%;

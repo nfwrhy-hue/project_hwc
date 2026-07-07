@@ -1,9 +1,10 @@
 .hwc-header {
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    position: sticky;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -219,6 +220,7 @@
         align-items: center;
         font-size: 16px;
         font-weight: 600;
+        text-decoration: none;
         color: #333333;
         padding: 10px 0;
         cursor: pointer;
@@ -228,7 +230,7 @@
         display: none;
         list-style: none;
         padding-left: 15px;
-        margin-top: 5px;
+        margin-top: 5px 0 0 0;
     }
 
     .m-dropdown li a {
