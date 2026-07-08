@@ -592,6 +592,10 @@
     .car_grid {
         grid-template-columns: repeat(2, 1fr); /* 태블릿 */
     }
+    .modal_content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }    
     .modal_body { flex-direction: column; }
 }
 
@@ -600,6 +604,10 @@
         grid-template-columns: repeat(2, 1fr); /* 모바일 */
     }    
     .search_box { padding: 20px; }
+    .modal_content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }    
     .modal_body { flex-direction: column; }
 }
 
@@ -610,5 +618,9 @@
     .hero_slogan h2 { font-size: 28px; }
     .hero_slogan p { font-size: 16px; }
     .search_box { padding: 20px;}
-    .modal_body { flex-direction: column; }    
+    .modal_content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    .modal_form_area { flex-direction: column; }    
 }
