@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    min-width: 1200px;
+    min-width: 320px;
     font-family: "Noto Sans KR", sans-serif;
     color: #222222;
     background: #ffffff;

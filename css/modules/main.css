@@ -8,7 +8,8 @@
 }
 
 .hero_inner {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: block;
@@ -70,20 +71,13 @@
 }
 
 .search_form {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .form_group {
-    display: table-cell;
-    vertical-align: middle;
-    padding-right: 25px;
-}
-
-.form_group:nth-last-of-type(1) {
-    border-right: none;
-    padding-right: 30px;
+    flex: 1 1 200px;
 }
 
 .form_group label {
@@ -118,8 +112,9 @@
 }
 
 .search_submit_btn {
-    display: table-cell;
-    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 180px;
     height: 48px;
     background: #0054a6;
@@ -130,6 +125,7 @@
     text-align: center;
     margin-top: 30px;
     transition: background .25s ease;
+    align-self: flex-end;
 }
 
 .search_submit_btn:hover {
@@ -165,7 +161,8 @@
 }
 
 .recommend_inner {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -340,7 +337,7 @@
     margin-left: 1px;
 }
 
-.car_card:hover .reserve_btn {
+.car_card:hover .btn_consult {
     background: #0054a6;
     color: #ffffff;
 }
@@ -587,4 +584,31 @@
 
 .modal_submit_btn:hover {
     background: #0054a6;
+}
+
+/* 반응형 */
+
+@media (max-width: 1024px) {
+    .car_grid {
+        grid-template-columns: repeat(2, 1fr); /* 태블릿 */
+    }
+    .modal_body { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+    .car_grid {
+        grid-template-columns: repeat(2, 1fr); /* 모바일 */
+    }    
+    .search_box { padding: 20px; }
+    .modal_body { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+    .car_grid {
+        grid-template-columns: repeat(1, 1fr); /* 모바일 */
+    }
+    .hero_slogan h2 { font-size: 28px; }
+    .hero_slogan p { font-size: 16px; }
+    .search_box { padding: 20px;}
+    .modal_body { flex-direction: column; }    
 }

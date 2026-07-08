@@ -101,3 +101,21 @@
 .login_btn:hover i {
     color: #ffffff;
 }
+
+/* 반응형 */
+
+@media (max-width: 1024px) {
+    .car_grid {
+        grid-template-columns: repeat(2, 1fr); /* 태블릿 */
+    }
+}
+
+@media (max-width: 480px) {
+    .car_grid {
+        grid-template-columns: repeat(1, 1fr); /* 모바일 */
+    }
+    .gnb_menu a {
+        font-size: 10px;
+        margin-left: -30px;
+    }
+}
